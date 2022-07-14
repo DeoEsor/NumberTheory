@@ -4,6 +4,14 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <PackageId>DeoEsor.NumberTheory</PackageId>
+        <Title>NumberTheory</Title>
+        <Authors>DeoEsor</Authors>
+        <Description>Some number theory primitives</Description>
+        <PackageProjectUrl>https://github.com/DeoEsor/NumberTheory</PackageProjectUrl>
+        <PackageIconUrl>https://i.pinimg.com/originals/cc/c1/5d/ccc15d4b4fce33304a47494cb92e6e51.jpg</PackageIconUrl>
+        <RepositoryUrl>https://github.com/DeoEsor/NumberTheory</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
     </PropertyGroup>
 
     <ItemGroup>
