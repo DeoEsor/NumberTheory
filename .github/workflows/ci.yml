@@ -17,8 +17,8 @@ jobs:
     - name: Test
       run: dotnet test --configuration Release --no-build
     - name: Pack
-      run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output .
+      run: dotnet pack --configuration Release /p:Version=1.0.$GITHUB_RUN_NUMBER --no-build --output .
     - name: Push
-      run: dotnet nuget push DeoEsor.NumberTheory.${VERSION}.nupkg --source https://nuget.pkg.github.com/acraven/index.json --api-key ${GITHUB_TOKEN}
+      run: dotnet nuget push ./DeoEsor.NumberTheory.$GITHUB_RUN_NUMBER.nupkg --source https://nuget.pkg.github.com/acraven/index.json --api-key ${GITHUB_TOKEN}
       env:
         GITHUB_TOKEN: ${{ secrets.NUGET_AUTH_TOKEN }}
