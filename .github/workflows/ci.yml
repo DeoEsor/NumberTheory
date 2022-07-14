@@ -19,6 +19,6 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release /p:Version=1.0.$GITHUB_RUN_NUMBER --no-build --output .
     - name: Push
-      run: dotnet nuget push /home/runner/work/NumberTheory/NumberTheory/DeoEsor.NumberTheory.1.0.$GITHUB_RUN_NUMBER.nupkg --source https://nuget.pkg.github.com/acraven/index.json --api-key ${GITHUB_TOKEN}
+      run: dotnet nuget push /home/runner/work/NumberTheory/NumberTheory/DeoEsor.NumberTheory.1.0.$GITHUB_RUN_NUMBER.nupkg --source https://nuget.pkg.github.com/acraven/index.json --api-key $GITHUB_TOKEN
       env:
         GITHUB_TOKEN: ${{ secrets.NUGET_AUTH_TOKEN }}
