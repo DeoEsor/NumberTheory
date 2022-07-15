@@ -59,7 +59,7 @@ Just some implementation of primitives from number theory on the platform .NET
 ### Installation
 
 ```
-Install-Package DeoEsor.NumberTheory -ProjectName MyProject
+dotnet add package DeoEsor.NumberTheory
 ```
 
 
